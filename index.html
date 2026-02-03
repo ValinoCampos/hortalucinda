@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Horta de Lucinda</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Header / Inicio -->
   <header>
-    <h1>A Horta de Lucinda</h1>
-    <p>Frutas y verduras de temporada directamente de nuestra huerta</p>
-    <nav>
-      <a href="#productos">Nuestros Productos</a>
-      <a href="#ferias">Ferias</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="container">
+      <div>
+        <h1>A Horta de Lucinda</h1>
+        <p>Frutas y verduras de temporada directamente de nuestra huerta</p>
+      </div>
+      <nav>
+        <a href="#productos">Nuestros Productos</a>
+        <a href="#ferias">Ferias</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Sección Productos -->
+  <main class="container">
   <section id="productos">
     <h2>Nuestros Productos</h2>
 
@@ -36,12 +43,14 @@
       <div class="producto alimento" data-disponible="abril-junio">
         <h3>Patatas</h3>
         <img src="patatas.jpg" alt="Patatas">
+        <div class="meta"><span class="badge">abril – junio</span></div>
         <p>Temporada: abril – junio</p>
       </div>
 
       <div class="producto alimento" data-disponible="septiembre-noviembre">
         <h3>Manzanas</h3>
         <img src="manzanas.jpg" alt="Manzanas">
+        <div class="meta"><span class="badge">septiembre – noviembre</span></div>
         <p>Temporada: septiembre – noviembre</p>
       </div>
 
@@ -49,12 +58,14 @@
       <div class="producto planton" data-plantar="marzo-mayo">
         <h3>Tomates</h3>
         <img src="tomates.jpg" alt="Tomates">
+        <div class="meta"><span class="badge">plantar: marzo – mayo</span></div>
         <p>Época para plantar: marzo – mayo</p>
       </div>
 
       <div class="producto planton" data-plantar="abril-junio">
         <h3>Pimientos</h3>
         <img src="pimientos.jpg" alt="Pimientos">
+        <div class="meta"><span class="badge">plantar: abril – junio</span></div>
         <p>Época para plantar: abril – junio</p>
       </div>
 
@@ -65,18 +76,35 @@
   <section id="ferias">
     <h2>Ferias</h2>
     <ul>
-      <li>Feria de Lugo – 15 de febrero</li>
-      <li>Feria de Ourense – 20 de marzo</li>
-      <li>Feria de Santiago – 10 de abril</li>
+      <li>Melide – todos los domingos</li>
+      <li>Monterroso – 1</li>
+      <li>Lalín – 3 y 18</li>
+      <li>Taboada – 4</li>
+      <li>Touro – 5</li>
+      <li>Palas de Rey – 7 y 19</li>
+      <li>Arzúa – 8 y 22</li>
+      <li>Antas de Ulla – 10</li>
+      <li>A Golada – 12</li>
+      <li>Rodeiro – 28</li>
     </ul>
+    <p style="color:var(--muted); margin-top:10px;">Nota: no siempre podremos asistir a todas las ferias.</p>
   </section>
 
   <!-- Sección Contacto -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Teléfono: 600 123 456</p>
-    <p>Dirección de los invernaderos: Rua da Huerta, 45, Galicia</p>
+    <p><strong>Tlf:</strong> <a href="tel:+34651684640">651 68 46 40</a></p>
+    <p>
+      <strong>Instagram:</strong> <a href="https://www.instagram.com/horta_de_lucinda/" target="_blank" rel="noopener noreferrer">@horta_de_lucinda</a>
+      &nbsp; &nbsp;
+      <strong>TikTok:</strong> <a href="https://www.tiktok.com/@horta.de.lucinda" target="_blank" rel="noopener noreferrer">@horta.de.lucinda</a>
+    </p>
+    <p>Dirección: <a href="https://www.google.com/maps/search/?api=1&query=Vila+do+fondo+1,+15819,+A+Coru%C3%B1a" target="_blank" rel="noopener noreferrer">Vila do fondo 1, 15819, A Coruña</a></p>
   </section>
+
+  </main>
+
+  
 
   <footer>
     <p>&copy; 2026 A Horta de Lucinda</p>
@@ -84,4 +112,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
