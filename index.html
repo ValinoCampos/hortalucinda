@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Horta de Lucinda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Inicio -->
+  <header>
+    <h1>A Horta de Lucinda</h1>
+    <p>Frutas y verduras de temporada directamente de nuestra huerta</p>
+    <nav>
+      <a href="#productos">Nuestros Productos</a>
+      <a href="#ferias">Ferias</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección Productos -->
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+
+    <!-- Filtros por categoría -->
+    <div class="filtros">
+      <button onclick="filtrar('alimento')">Alimentos</button>
+      <button onclick="filtrar('planton')">Plantones</button>
+      <button onclick="filtrar('todos')">Todos</button>
+    </div>
+
+    <!-- Productos -->
+    <div class="productos">
+
+      <!-- Ejemplo Alimento -->
+      <div class="producto alimento" data-disponible="abril-junio">
+        <h3>Patatas</h3>
+        <img src="patatas.jpg" alt="Patatas">
+        <p>Temporada: abril – junio</p>
+      </div>
+
+      <div class="producto alimento" data-disponible="septiembre-noviembre">
+        <h3>Manzanas</h3>
+        <img src="manzanas.jpg" alt="Manzanas">
+        <p>Temporada: septiembre – noviembre</p>
+      </div>
+
+      <!-- Ejemplo Plantón -->
+      <div class="producto planton" data-plantar="marzo-mayo">
+        <h3>Tomates</h3>
+        <img src="tomates.jpg" alt="Tomates">
+        <p>Época para plantar: marzo – mayo</p>
+      </div>
+
+      <div class="producto planton" data-plantar="abril-junio">
+        <h3>Pimientos</h3>
+        <img src="pimientos.jpg" alt="Pimientos">
+        <p>Época para plantar: abril – junio</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Ferias -->
+  <section id="ferias">
+    <h2>Ferias</h2>
+    <ul>
+      <li>Feria de Lugo – 15 de febrero</li>
+      <li>Feria de Ourense – 20 de marzo</li>
+      <li>Feria de Santiago – 10 de abril</li>
+    </ul>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Teléfono: 600 123 456</p>
+    <p>Dirección de los invernaderos: Rua da Huerta, 45, Galicia</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 A Horta de Lucinda</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
